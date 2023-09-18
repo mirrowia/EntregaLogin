@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito</title>
+
+  <!-- Agregar los archivos CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+
+<body>
+  <div class="container">
+    <h1 class="mt-5">Bienvenido, {{user}}</h1>
+
+    <h2 class="mt-4">Tu Carrito de Compras:</h2>
+    <ul class="list-group mt-3">
+      {{#if products.length}}
+      {{#each products}}
+      <li class="list-group-item">
+        <div class="product-info">
+          <div class="row align-items-center">
+            <div class="col-md-1">
+              <button class="btn btn-danger" onclick="eliminarProducto('{{this.details._doc._id}}', '{{this.quantity}}')">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+            <div class="col-md-2">
+              <img src="{{this.details._doc.image_url}}" alt="{{this.details._doc.name}}" class="img-fluid"
+                width="100" />
+            </div>
+            <div class="col-md-7">
+              <h3>{{this.details._doc.name}}</h3>
+              <p>Cantidad: {{this.quantity}}</p>
+            </div>
+            <div class="col-md-2 text-end">
+              <p>Total: ${{this.total}}</p>
+            </div>
+          </div>
+        </div>
+      </li>
+      {{/each}}
+
+      <div class="text-end mt-3">
+        <p class="h4">Total General: ${{total}}</p class="h4">
+      </div>
+    </ul>
+
+    {{else}}
+    <li class="list-group-item d-flex justify-content-center align-items-center">
+      <div class="text-center">
+        <p>No hay productos en el carrito</p>
+        <a href="/api/products/list">Vuelve a la página de productos</a>
+      </div>
+    </li>
+    {{/if}}
+  </div>
+
+  <script>
+    function eliminarProducto(productId, quantity) {
+
+      console.log(productId)
+
+      // Reemplaza "cid" y "pid" con los valores reales si es necesario
+      const cartId = "cid"; // Reemplaza "cid" con el valor correcto
+      const endpoint = `{{cartId}}/products/${productId}`;
+
+      // Realiza una solicitud DELETE al endpoint
+      fetch(endpoint, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({quantity }),
+
+      })
+        .then((response) => {
+          if (response.ok) {
+            // Eliminación exitosa, puedes realizar cualquier acción adicional aquí
+            console.log("Producto eliminado con éxito");
+            location.reload();
+          } else {
+            console.error("Error al eliminar el producto");
+          }
+        })
+        .catch((error) => {
+          console.error("Error de red al eliminar el producto", error);
+        });
+
+
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalles del Producto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <style>
+      /* Fondo degradado de gris azulado */ body { background:
+      linear-gradient(to bottom, #778899 0%, #606c88 100%); min-height: 100vh;
+      margin: 0; display: flex; justify-content: center; align-items: center; }
+      /* Estilo adicional para el contenedor de detalles */ .product-details {
+      max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fff;
+      border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display:
+      flex; flex-direction: row; } /* Estilo para la imagen del producto */
+      .product-image { max-width: 100%; height: auto; } /* Estilo para el botón
+      de añadir al carrito */ .add-to-cart-btn { display: flex; align-items:
+      center; justify-content: center; background-color: #3cc929; margin: auto;
+      margin-top: 10px; color: #ffffff; border: none; border-radius: 5px; width:
+      100%; height: 50px; font-size: 1.5rem; cursor: pointer; }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="product-details">
+        <div class="product-info">
+          <h1>{{payload._doc.name}}</h1>
+          <p><strong>Descripción:</strong> {{payload._doc.description}}</p>
+          <p><strong>Categoría:</strong> {{payload._doc.category}}</p>
+          <p><strong>Stock:</strong> {{payload._doc.stock}}</p>
+          <p><strong>Precio:</strong> ${{payload._doc.price}}</p>
+        </div>
+        <div class="product-image-container">
+          <img
+            src="{{payload._doc.image_url}}"
+            alt="{{payload._doc.name}}"
+            class="product-image"
+          />
+          <button
+            class="add-to-cart-btn"
+            onclick="addToCart(this)"
+            id="{{payload._doc._id}}"
+          >
+            <i class="bi bi-cart-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,210 @@
+[
+  {
+    "name": "The Witcher 3: Wild Hunt",
+    "description": "Un juego de rol de acción ambientado en un mundo de fantasía abierto.",
+    "category": "RPG",
+    "stock": 500,
+    "price": 29.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/292030/capsule_616x353.jpg"
+  },
+  {
+    "name": "Counter-Strike: Global Offensive",
+    "description": "Un popular juego de disparos en primera persona orientado a la competición.",
+    "category": "FPS",
+    "stock": 1000,
+    "price": 14.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/730/capsule_616x353.jpg"
+  },
+  {
+    "name": "Grand Theft Auto V",
+    "description": "Un juego de mundo abierto lleno de acción y crimen.",
+    "category": "Acción",
+    "stock": 300,
+    "price": 24.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/271590/capsule_616x353.jpg"
+  },
+  {
+    "name": "Minecraft",
+    "description": "Un juego de construcción y aventuras en un mundo de bloques.",
+    "category": "Aventura",
+    "stock": 800,
+    "price": 19.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/418370/capsule_616x353.jpg"
+  },
+  {
+    "name": "Among Us",
+    "description": "Un juego multijugador de deducción y traición en una nave espacial.",
+    "category": "Multijugador",
+    "stock": 700,
+    "price": 4.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/945360/capsule_616x353.jpg"
+  },
+  {
+    "name": "Sid Meier's Civilization VI",
+    "description": "Un juego de estrategia por turnos que te permite construir tu imperio.",
+    "category": "Estrategia",
+    "stock": 400,
+    "price": 39.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/289070/capsule_616x353.jpg"
+  },
+  {
+    "name": "Rocket League",
+    "description": "Un juego de deportes que combina fútbol y vehículos de alta velocidad.",
+    "category": "Deportes",
+    "stock": 600,
+    "price": 9.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/252950/capsule_616x353.jpg"
+  },
+  {
+    "name": "Stardew Valley",
+    "description": "Un encantador juego de simulación de granja con una jugabilidad relajante.",
+    "category": "Simulación",
+    "stock": 350,
+    "price": 14.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/413150/capsule_616x353.jpg"
+  },
+  {
+    "name": "The Elder Scrolls V: Skyrim",
+    "description": "Un juego de rol de mundo abierto con una vasta aventura por descubrir.",
+    "category": "RPG",
+    "stock": 250,
+    "price": 29.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/72850/capsule_616x353.jpg"
+  },
+  {
+    "name": "Terraria",
+    "description": "Un juego de aventuras y construcción en un mundo pixelado.",
+    "category": "Aventura",
+    "stock": 450,
+    "price": 9.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/105600/capsule_616x353.jpg"
+  },
+  {
+    "name": "Overwatch",
+    "description": "Un juego de disparos en equipo con héroes únicos.",
+    "category": "FPS",
+    "stock": 550,
+    "price": 19.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/578080/capsule_616x353.jpg"
+  },
+  {
+    "name": "Civilization V",
+    "description": "Un juego de estrategia por turnos para construir civilizaciones.",
+    "category": "Estrategia",
+    "stock": 200,
+    "price": 19.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/8930/capsule_616x353.jpg"
+  },
+  {
+    "name": "Fall Guys: Ultimate Knockout",
+    "description": "Un juego de carreras en línea lleno de obstáculos y diversión.",
+    "category": "Multijugador",
+    "stock": 300,
+    "price": 14.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/1097150/capsule_616x353.jpg"
+  },
+  {
+    "name": "Red Dead Redemption 2",
+    "description": "Un juego de acción y aventuras en el Salvaje Oeste.",
+    "category": "Acción",
+    "stock": 400,
+    "price": 39.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/1174180/capsule_616x353.jpg"
+  },
+  {
+    "name": "Subnautica",
+    "description": "Un juego de supervivencia submarina en un planeta alienígena.",
+    "category": "Aventura",
+    "stock": 350,
+    "price": 19.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/264710/capsule_616x353.jpg"
+  },
+  {
+    "name": "Cities: Skylines",
+    "description": "Un juego de construcción de ciudades y gestión urbana.",
+    "category": "Simulación",
+    "stock": 300,
+    "price": 29.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/255710/capsule_616x353.jpg"
+  },
+  {
+    "name": "Dota 2",
+    "description": "Un juego de estrategia en tiempo real de batallas multijugador en línea.",
+    "category": "Estrategia",
+    "stock": 900,
+    "price": 0.0,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/570/capsule_616x353.jpg"
+  },
+  {
+    "name": "Hollow Knight",
+    "description": "Un juego de plataformas y acción en un oscuro mundo de insectos.",
+    "category": "Aventura",
+    "stock": 250,
+    "price": 14.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/367520/capsule_616x353.jpg"
+  },
+  {
+    "name": "Terraria",
+    "description": "Un juego de aventuras y construcción en un mundo pixelado.",
+    "category": "Aventura",
+    "stock": 450,
+    "price": 9.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/105600/capsule_616x353.jpg"
+  },
+  {
+    "name": "Dead by Daylight",
+    "description": "Un juego de horror multijugador asimétrico donde puedes ser un superviviente o el asesino.",
+    "category": "Horror",
+    "stock": 400,
+    "price": 19.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/381210/capsule_616x353.jpg"
+  },
+  {
+    "name": "Sekiro: Shadows Die Twice",
+    "description": "Un juego de acción y aventuras en un Japón feudal lleno de peligros.",
+    "category": "Acción",
+    "stock": 300,
+    "price": 49.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/814380/capsule_616x353.jpg"
+  },
+  {
+    "name": "Dark Souls III",
+    "description": "Un desafiante juego de rol de acción con un mundo oscuro y peligroso.",
+    "category": "RPG",
+    "stock": 200,
+    "price": 19.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/374320/capsule_616x353.jpg"
+  },
+  {
+    "name": "Resident Evil Village",
+    "description": "Un juego de terror en primera persona lleno de monstruos y misterios.",
+    "category": "Horror",
+    "stock": 250,
+    "price": 39.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/1196590/capsule_616x353.jpg"
+  },
+  {
+    "name": "DOOM Eternal",
+    "description": "Un frenético juego de disparos donde te enfrentas a demonios del infierno.",
+    "category": "FPS",
+    "stock": 350,
+    "price": 29.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/782330/capsule_616x353.jpg"
+  },
+  {
+    "name": "Cyberpunk 2077",
+    "description": "Un juego de rol de acción futurista en un mundo abierto lleno de tecnología y crimen.",
+    "category": "RPG",
+    "stock": 150,
+    "price": 49.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/1091500/capsule_616x353.jpg"
+  },
+  {
+    "name": "FIFA 22",
+    "description": "El juego de fútbol más popular con equipos y jugadores actualizados.",
+    "category": "Deportes",
+    "stock": 500,
+    "price": 39.99,
+    "image_url": "https://steamcdn-a.akamaihd.net/steam/apps/1506820/capsule_616x353.jpg"
+  }
+]
