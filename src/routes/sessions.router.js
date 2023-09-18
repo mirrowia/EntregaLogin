@@ -11,28 +11,42 @@ router.get("/login", (req, res) => {
 router.post("/login", async (req, res) => {
   const { username, password } = req.body;
 
-  const user = await userModel.findOne({ username });
+  if (username == "adminCoder@coder.com" && password == "adminCod3r123") {
+    req.session.user = {
+      username,
+      name: "Admin",
+      lastname: "Coder",
+      email: username,
+      age: 25,
+      rol: "Admin",
+    };
+    res.redirect("/api/sessions/");
+  } else {
+    const user = await userModel.findOne({ username });
 
-  if (user != null) {
-    if (user.password === password) {
-      const cart = await cartModel.findById(user.cart);
-      req.session.user = {
-        username: user.username,
-        name: user.name,
-        lastname: user.lastname,
-        email: user.email,
-        age: user.age,
-        cart: cart._id.toString(),
-        rol: user.rol,
-      };
-      res.redirect("/api/sessions/");
+    if (user != null) {
+      if (user.password === password) {
+        const cart = await cartModel.findById(user.cart);
+        req.session.user = {
+          username: user.username,
+          name: user.name,
+          lastname: user.lastname,
+          email: user.email,
+          age: user.age,
+          cart: cart._id.toString(),
+          rol: user.rol,
+        };
+        res.redirect("/api/sessions/");
+      } else {
+        res
+          .status(400)
+          .json({ status: "error", message: "Credenciales erroneas" });
+      }
     } else {
       res
         .status(400)
         .json({ status: "error", message: "Credenciales erroneas" });
     }
-  } else {
-    res.status(400).json({ status: "error", message: "Credenciales erroneas" });
   }
 });
 
@@ -78,8 +92,8 @@ router.post("/logout", (req, res) => {
 router.get("/", (req, res) => {
   if (!req.session.user) return res.redirect("./login");
 
-  const { username, name, lastname, email, age, cart } = req.session.user;
-  res.render("profile", { username, name, lastname, email, age, cart });
+  const { username, name, lastname, email, age, cart, rol } = req.session.user;
+  res.render("profile", { username, name, lastname, email, age, cart, rol });
 });
 
 module.exports = router;

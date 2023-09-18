@@ -19,6 +19,11 @@ app.engine(
     extname: "hbs",
     defaultLayout: false,
     layoutsDir: "views/",
+    helpers: {
+      eq: function (a, b, options) {
+        return a === b ? true : false;
+      },
+    },
   })
 );
 app.set("views", path.join(__dirname + "/views"));
